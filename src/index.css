@@ -341,7 +341,7 @@ width: 100%;
 }
 .gallery-img{
   width: 850px;
-  height: 350px;
+  height: 450px;
 }
 @media (max-width:1400px){
   .gallery, .gallery-img{
