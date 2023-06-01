@@ -11,7 +11,7 @@ export default function RightSideNews(){
   
     useEffect(() => {
       axios
-        .get("https://femida007-admin-aslul.ondigitalocean.app/api/news-blocks")
+        .get("https://stingray-app-vyo66.ondigitalocean.app/api/news-block")
         .then(({ data }) => setRestaurants(data.data))
         .catch((error) => setError(error));
     }, []);
