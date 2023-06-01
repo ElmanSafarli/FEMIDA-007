@@ -32,7 +32,7 @@ export default function NewDetails() {
 
     useEffect(() => {
         axios
-          .get(`https://femida007-admin-aslul.ondigitalocean.app/api/news-blocks/${id}`)
+          .get(`https://stingray-app-vyo66.ondigitalocean.app/api/news-block/${id}`)
           .then((response) => setNews(response.data.data.attributes))
           .catch((error) => setError(error));
     }, []);
