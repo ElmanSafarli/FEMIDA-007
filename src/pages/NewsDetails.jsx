@@ -8,6 +8,7 @@ import SiteHeader from "../components/SiteHeader";
 
 import Femida from "../assets/femida.jpg"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import RightSideNews from "../components/RightSideNews";
 
 
 export default function NewDetails() {
@@ -41,11 +42,20 @@ export default function NewDetails() {
     return(
         <div className="news-details">
             <SiteHeader/>
-            <div className="news-details-content">
-                <h1>{news.title}</h1>
-                <img src={news.url} alt="s" />
-                <ReactMarkdown>{news.body}</ReactMarkdown>    
+            <div className="news-detail-group">
+                <div className="new-details-group-left">
+                    <div className="news-details-content">
+                        <h1>{news.title}</h1>
+                        <img src={news.url} alt="s" />
+                        <ReactMarkdown>{news.body}</ReactMarkdown>    
+                    </div>
+                </div>
+                <div className="news-detail-group-right">
+                    <RightSideNews/>
+                </div>
             </div>
+            
+
         </div>
     )
 }
